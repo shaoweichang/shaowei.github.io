@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="en">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.2 -->
+    <script>
+        window.materialVersion = "1.5.2"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            瑞·达里欧和他的原则 | 
+        
+        shaowei
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/shaowei.github.io/img/favicon.png">
+    <link rel="icon" href="/shaowei.github.io/img/favicon.png">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="">
+    <meta name="keywords" content="">
+    <meta name="theme-color" content="#0097A7">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.en.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/shaowei.github.io/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/shaowei.github.io/css/style.min.css?MKetZV3cUTfDxvMffaOezg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/shaowei.github.io/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/shaowei.github.io/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="shaowei">
+    <meta name="msapplication-starturl" content="https://shaoweichang.github.io/shaowei.github.io/shaowei.github.io/2019/03/11/RayDalioAndHisPrinciples/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="shaowei">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/shaowei.github.io/img/favicon.png">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="https://shaoweichang.github.io/shaowei.github.io/shaowei.github.io/2019/03/11/RayDalioAndHisPrinciples/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="瑞·达里欧和他的原则 | shaowei">
+    <meta property="og:image" content="/shaowei.github.io/img/favicon.png">
+    <meta property="og:description" content="">
+    
+
+    
+        <meta property="article:published_time" content="Mon Mar 11 2019 02:46:17 GMT+0800">
+        <meta property="article:modified_time" content="Mon Mar 11 2019 22:25:14 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="https://shaoweichang.github.io/shaowei.github.io/shaowei.github.io/2019/03/11/RayDalioAndHisPrinciples/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://shaoweichang.github.io/shaowei.github.io/shaowei.github.io/2019/03/11/RayDalioAndHisPrinciples/index.html",
+    "headline": "瑞·达里欧和他的原则",
+    "datePublished": "Mon Mar 11 2019 02:46:17 GMT+0800",
+    "dateModified": "Mon Mar 11 2019 22:25:14 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "ShaoweiChang",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": ""
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "shaowei",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": "",
+    "description": "",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+
+</head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/shaowei.github.io/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                瑞·达里欧和他的原则
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/shaowei.github.io/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>ShaoweiChang</strong>
+        <span>Mar 11, 2019</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=瑞·达里欧和他的原则&url=https://shaoweichang.github.io/shaowei.github.io/shaowei.github.io/2019/03/11/RayDalioAndHisPrinciples/index.html&pic=https://shaoweichang.github.io/shaowei.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Weibo
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=瑞·达里欧和他的原则&url=https://shaoweichang.github.io/shaowei.github.io/shaowei.github.io/2019/03/11/RayDalioAndHisPrinciples/index.html&via=ShaoweiChang" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://shaoweichang.github.io/shaowei.github.io/shaowei.github.io/2019/03/11/RayDalioAndHisPrinciples/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://shaoweichang.github.io/shaowei.github.io/shaowei.github.io/2019/03/11/RayDalioAndHisPrinciples/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>&emsp;&emsp;看《原则》（Principles）这本书之前，不了解金融界有<strong>瑞·达里欧</strong>这么一个投资家的存在，只知道索罗斯这个曾经用金融工具洗劫几个国家的大鳄，和被称为投资之神的巴菲特。有人把瑞·达里欧比作投资界的乔布斯，因为他对公司的管理风格和投资方式独树一帜。下面是 <a href="https://www.zhihu.com/question/41593078" target="_blank" rel="noopener">知乎</a>上一段对瑞·达里欧和桥水基金的介绍：</p>
+<p>&emsp;&emsp;瑞·达里欧是桥水基金公司（Bridge Water）创始人, 对冲基金史上最成功的基金经理，1975年，瑞·达利奥创办桥水基金，并带领桥水基金在2005年成为世界规模最大的对冲基金。截止2017年10月，桥水基金一共管理着约1600亿美元的资产，累计盈利450亿美金。桥水一直以来都迥异于华尔街其他投资机构，并且保持着一贯的低调与独特。</p>
+<p>&emsp;&emsp;特立独行的第一点便是投资策略。达里奥和他的桥水公司最擅长采用宏观对冲策略获得高收益，达里奥对宏观经济形势的准确判断帮助桥水实现了优秀的业绩。通常情况下，达利奥的策略是先对政治、经济、监管环境变化进行评估，在研究盈利机会的基础上通过多元化配置对冲风险。他执掌的基金投资于全球范围内上百种不同的金融产品，从各国国债、期货到各国货币等无所不包。</p>
+<p>&emsp;&emsp;特立独行的第二点则是对客户的挑剔。桥水公司的大部分客户来自于机构投资者，而非高净值个人。其管理的资金中几乎三分之二来自于养老基金、约四分之一来自于国家主权基金，比如新加坡和中国的主权财富基金。</p>
+<p>&emsp;&emsp;特立独行的第三点就是异常低调的态度。作为全球顶级对冲基金公司，桥水公司掌管着1600多亿美元资产，但是这家公司却选择远离华尔街的喧嚣，甚至连纽约都不想待着，而是选择了隐匿在康涅狄格州韦斯特波的树林里。桥水公司创始人达里奥也是如此低调，虽然早已跻身福布斯富豪榜，同时也是叱咤华尔街的风云人物，他与妻子35年来都居住在康涅狄格州格林威治镇上一套5500多英尺并不奢华的房子内，平时着装朴素，对金钱物质毫不看重，却热衷慈善事业。</p>
+<p>&emsp;&emsp;1975年，当时还名不经传、年仅26岁的的瑞·达里欧被一家从事零售经纪预算业务的公司炒鱿鱼后，他决定不再替人打工了，成功说服了曾经的一位客户雇佣他当顾问，并且在纽约的一套两居室公寓里成立了桥水公司。</p>
+<p>&emsp;&emsp;当时的桥水公司是一家咨询公司，而非今日的对冲基金公司。刚开始，桥水公司只有两种业务：一种业务是为机构投资者提供咨询服务，另一种是国内外货币和利率风险的管理业务，随着公司业务的发展，桥水后来也开始向政府以及像麦当劳这种大型企业销售经济咨询报告。在20世纪80年代初期，桥水发行的一份付费调查报告—“日常观察”走红华尔街，得到了很多大型公司以及银行的青睐。</p>
+<p>&emsp;&emsp;1985年是桥水公司业务转型的关键一年。这一年，达里奥通过公关让桥水顺利拿下了世界银行职工退休基金的部分资金，这笔高达50亿美元的巨资被用于固定收益投资，这也是桥水第一笔投资基金。此后，也就是在20世纪80年代中期，桥水一直将其业务重心放在了机构投资者的债券和货币管理。</p>
+<p>&emsp;&emsp;1989年，桥水又迈出了巨大的一步，开始转向股票市场投资。当年，世界500强之一的柯达公司急需专业的投资机构为其打理资产，因为这家公司的大部分资金都在股票市场里。最终，柯达公司的高管选择了相信达里奥，虽然桥水此前并没有管理股票的经验，但事实证明柯达的选择没有错，毕竟桥水公司后来凭借惊人的业绩汇报成为了全球最大的对冲基金公司，柯达委托桥水管理的资产自然也是增值了不少。</p>
+<p>&emsp;&emsp;在20世纪90年代，桥水公司进入了金融创新的高潮时期，公司开发了多种创新投资工具，如通货膨胀联动债券、货币管理外包、新兴市场债务、全球债券、超长期债券以及对冲基金。</p>
+<p>&emsp;&emsp;1990年，桥水公司开始正式为其客户提供货币管理外包产品。</p>
+<p>&emsp;&emsp;1991年，桥水公司建立了自己的旗舰基金-——绝对阿尔法(Pure Alpha)，这个基金采取标准的2%管理费、20%业绩提成的收费方式，追求绝对收益，即便在2000-2003年的市场低迷期仍然表现得十分出色。</p>
+<p>&emsp;&emsp;1992年，桥水公司引进了环球债券风险投资项目。</p>
+<p>&emsp;&emsp;1995年，桥水公司发行了全天候(All Weather)对冲基金，这只基金管理费较低、主要追求相对收益。</p>
+<p>&emsp;&emsp;1996年，桥水公司开创性地运用风险平价技术去管理投资组合。</p>
+<p>&emsp;&emsp;2006年，公司的旗舰基金“绝对阿尔法”为了保持其投资策略以及增强容量限制，它开始返还部分资金给其投资者。同时，桥水开始让其投资者可以自由选择不同的投资策略(如绝对阿尔法基金和全天候基金)，改变了其传统的投资组合模式。</p>
+<p>&emsp;&emsp;在2006年-2011年短短5年时间里，桥水就已经获得了多达22项的行业荣誉，被公认为业界领先的资产管理公司以及行业先锋。在2010和2011年，桥水已经连续两年成为了世界上规模最大和业绩最好的的对冲基金公司。</p>
+<p>&emsp;&emsp;雷·达里奥在2012年初被业内评为对冲基金史上最成功的基金经理，公司旗下纯阿尔法基金(Pure Alpha Fund)在1975年至2011年为投资人净赚了358亿美金，超过了索罗斯量子基金自1973年创立以来的总回报。美联储前主席保罗·沃尔克曾评价说“达里奥的桥水基金对经济的统计分析甚至比美联储的更靠谱。”</p>
+<p>&emsp;&emsp;如果从业绩来看，达里奥和他的桥水公司确实无可挑剔。在大多数对冲基金折戟的2008年，他的旗舰基金Pure Alpha净值增长了9.5%。2010年，该基金更创下45%的全球大型对冲基金最高回报率纪录。2011年，在全球对冲基金平均亏损5%的情况下，All Weather的回报率高达23%，Pure Alpha基金也达到了16.5%。</p>
+<p>&emsp;&emsp;从更长的时间维度看，过去20年里达里奥执掌的基金年化回报率高达14.7%，为投资者累计带来500亿美元盈利，相比之下标普500指数同期年化回报率为8.7%。其中Pure Alpha基金自1975年成立以来已经累计赚得358亿美元，超过了索罗斯量子基金自成立以来赚得312亿美元的收益。</p>
+<p>&emsp;&emsp;那么这么一位成功的投资家为什么要写这本书呢？书中一段话对这个问题作了回答。</p>
+<p>&emsp;&emsp;‘’在我看来，人生由三个阶段组成：第一个阶段，我们依赖其他人，我们学习；第二个阶段，其他人依赖我们，我们工作；第三个阶段，当其他人不再依赖我们，我们也不必再工作时，我们就可以自由的体验生活了。</p>
+<p>我开始从第二个阶段向第三个阶段转型。在理性和感性两方面，让我更有热情的事情都不再是自己去的成功，而是让我关心的人在没有我的情况下取得成功。</p>
+<p>&emsp;&emsp;我主要的目的不是向你推销这些原则，而是与你分享我在40多年职业生涯中吸取的宝贵经验教训。我的目标是让你认真思索，在很多情况下如何进行艰难取舍。在思考原则背后的取舍时，你就能够得出自己的结论，究竟哪些原则最适合你“。</p>
+<p>&emsp;&emsp;作者在《原则》这本书里详细介绍了自己多年积累的生活和工作中的原则（或者叫方法），整体感觉读起来没有那么亲切，除了开篇小部分介绍自己的成长经历以外，其它部分读起来像是一个工作手册，或者是一个长辈在说教，如果不赞成作者的想法，没有产生感情上共鸣，会有捂上耳朵不想听的冲动。不得不说作者提出的很多观点和问题直面人的弱点，并且给出了怎么处理这类问题的建议，很多是我在工作和生活中遇到并且被困扰的问题。看了以后也更加了解了自己离优秀还有多远的差距和怎么缩小这些差距。</p>
+<p>“时间就像一条河流，<br>载着我们顺流而下，<br>遇到现实，需要决策，<br>但我们无法停留，<br>也无法回避，<br>只能以最好的方式应对”</p>
+<p>&emsp;&emsp;开始告诉“我”的思考之前，我想先说明，我是个“愚人”，相对于我需要知道的东西而言，我真正知道的并没有多少。不管我一生中取得了多大的成功，其主要原因都不是我知道多少事情，而是我知道在无知的情况下自己应该怎么做。我一生中学到的最重要的东西是一种以原则为基础的生活方式，是它帮助我发现真相是什么，并据此如何行动。</p>
+<p><strong>1.观察自然，学习现实规律</strong></p>
+<p>&emsp;&emsp;大自然向我们展示了所有的现实规律。这些规律不是人创造的，但通过理解规律，我们能利用规律促进自身的进化，实现我们的目标。例如，人类能飞行，能在全世界发送手机信号，这些能力来自理解和应用已有的现实规律——物理规律或自然世界的法则。</p>
+<p>&emsp;&emsp;人类最独特的能力是，只有人类能从更高的维度看待现实，并总结出对现实的理解。其他物种都是遵循本能生活，只有人类能够超越自身，在当时所处的环境和时间中看待自身。为了弄清楚现实的规律和对待它们的原则，我发现有益的做法是，努力从自然的角度观察事物。尽管与其他物种相比人类非常聪明，但与整个自然相比，我们的智慧就像是生长在山岩上的苔藓。我们没有能力设计和制造一只蚊子，更不用说宇宙中所有的物种和大多数其他东西了。所以我的出发点是，自然比我更聪明，我努力让自然教我认识现实规律。</p>
+<p>&emsp;&emsp;进化是宇宙中最强大的力量，是唯一永恒的东西，是一切的驱动力。从最小的亚原子粒子到整个银河系，一切都在进化。尽管所有东西似乎都会死亡或消失，但真相是，它们只是以进化的形式重新组合了。能量是不能被摧毁的，只能改变其形态。同样的东西一直在不断以不同形式分裂、重组。其背后的力量就是进化。<br>例如，每个生物的首要目标是做基因的容器，基因不断进化出生命。每个个体体内的基因都来自远古时代，基因在承载它的个体死去之后还会长存，并进化出越来越复杂的形式。</p>
+<p>&emsp;&emsp;进化是好的，因为它是一个适应的过程，通常会推动事物的改善。产品、组织、人类的能力，所有东西都在以类似的方式逐渐进化。这只不过是一个要么适应、改进，要么死亡的过程。</p>
+<p>&emsp;&emsp;进化由各种适应和创造组成，它们能够提供即时的好处，但这些好处的价值会不断降低。这一痛苦的降低过程可能引发新的适应、创造，把新的产品、组织和人类能力带到新的、更高的进化水平上，也可能引发衰落和死亡。想想你知道的任何产品、组织或人，你就会知道这是真的。世界上到处都是曾经辉煌但逐渐衰落和毁灭的东西，只有极少数东西一直在重塑自身，不断达到伟大的新高度。<br>&emsp;&emsp;从这个角度，我们可以看到完美是不存在的，它是一个目标，激发永不停息“的进化过程。假如自然或任何东西是完美的，它就不会进化。生物、组织和个人总是高度不完美的，但都拥有改善的能力。所以，与其顽固地隐藏我们的缺点，假装自己是完美的，还不如找出并应对我们的缺陷。你可以从自己犯的错误中获得教益，不断坚持，为成功做出更好的准备，否则就将失败。</p>
+<p><strong>2.理解自然提供的现实教训</strong></p>
+<p>&emsp;&emsp;人独特的逻辑、抽象、从更高层次思考的能力，是在大脑皮层的构造中完成的。人类大脑的这些部分比动物更发达，让我们可以反思自身，引导自己的进化。因为我们能进行有意识的、以记忆为基础的学习，所以我们能比任何物种都更快、更深入地进化，不仅一代代地进化，而且在自己的一生中进化。<br>&emsp;&emsp;这种持续地追求学习和改进的动力，让人类天生地对进步感到快乐，对快速进步感到兴奋。尽管大多数人觉得他们是在追求能让自己快乐的东西（玩具、大房子、金钱、地位等），但这些只能带来小的满足，远远无法与进步能给大多数人带去的长期的满足感相比。</p>
+<p>&emsp;&emsp;一旦得到我们追求的东西，我们的满足感通常不会延续。这些东西只是诱饵，追逐诱饵要求我们必须进化，而且对所有人来说重要的是进化，而不是回报本身。这意味着对大多数人而言，成功就是以尽可能高效的方式拼搏和进化，即迅速认识自身和所处环境，然后通过改变实现进步。<br>&emsp;&emsp;这是收益递减规律的自然结果。想想赚钱这件事。一旦钱赚得太多，人从赚钱中得到的边际收益就会很小或者没有，和任何形式的过量是一个道理，如暴饮暴食。如果拥有健康的心智，人们就会开始探索新东西，或者更深入地探索旧东西，并在这个过程中变得更强大。</p>
+<p>&emsp;&emsp;我们天生想要进化，而我们追逐的其他东西尽管美好，却不能维持我们的快乐，这一认识帮助我聚焦于我的目标：不断进化，为整体进化贡献绵薄之力。虽然我们不喜欢痛苦，但自然的创造是有目的，所以自然让我们痛苦是有意图的。那么意图是什么？痛苦让我们清醒，帮助我们进步。</p>
+<p>&emsp;&emsp;每当遇到痛苦的东西时，你就处在生活中一个潜在的重要节点：你可以选择健康并痛苦的事实，也可以选择不健康但舒适的幻觉。如果选择了健康之路，痛苦将会转变成快乐。</p>
+<p>&emsp;&emsp;自然的一项根本法则是，为了赢得力量，人必须努力突破极限，而这是痛苦的。正像卡尔·荣格所说，“人需要困难，这对健康来说是必需的”。但多数人本能地躲避痛苦，不论是锻炼身体还是历练头脑。多数人在痛苦时不愿反思，而一旦痛苦消失他们的注意力就会转移，所以他们难以通过反思得到教益。如果你在痛苦时能好好反思（这个要求也许太高），非常好。如果你能记得在痛苦消失后反思，也很有价值。</p>
+<p><strong>3.目标导向型思维</strong></p>
+<p>&emsp;&emsp;没有目标的人，永远是无力的、涣散的。多数人都是凭情感行动，只看眼前，而没有从战略性的视角出发。他们的生活中充满了没有方向性的情感体验，随波逐流。如果你想在晚年回顾一生时觉得实现了人生愿望的话，你就不应该这样做。</p>
+<p>&emsp;&emsp;目标导向型思维和不忘初心有些类似，有些人走着走着就不知道自己要干嘛了。看到过一个小故事，小A养了一条鱼，跟这条鱼朝夕相处了很长时间，没想到天有不测风云，这条鱼在某一天死掉了，小A深感悲痛，打算给这条鱼办一场葬礼送别，火葬进行的过程中，小A闻到炭火和肉碰撞在一起的香味，没控制住竟然把眼前的这只烤鱼吃掉了。</p>
+<p><strong>4.奉行高标准但不要做完美主义者</strong></p>
+<p>&emsp;&emsp;完美主义者花太多时间关注边缘性的微小因素，影响对重大因素的考虑，特别是做决定时，一般情况下做出一个决定通常只有5—10个需要考虑的重要因素。重要的是深入了解这些因素，而过了一定的临界点 “后，即使研究重要因素，所产生的边际收益也是有限的。</p>
+<p><strong>5.小节上自恋</strong></p>
+<p>&emsp;&emsp;专心协商大事时，别被琐事烦扰。很多时候人们在大事上达成共识后，为一些不太重要的小事争论不休，甚至成为仇家，全然不顾他们更应着眼于大事。这种现象也被称作小节上的自恋。“我”曾经亲眼见过，一个亲密的家庭因为感恩节上谁来切火鸡肉一事而爆发无法挽回的冲突。所以，不要染上小节上自恋的毛病。没有任何人、任何事是完美的，看问题要从大局出发。</p>
+<p>&emsp;&emsp;谨记“80/20法则”，并明白关键性的“20%”是什么。“80/20法则”是指，你从20%的信息或努力中得到80%的价值。（同样，你可能需要花费80%的努力来获取最后20%的价值。）理解这一法则后，一旦你了解了做出好决策所需的大多数情况，你就不必再陷于不必要的细节之中了。</p>
+<p>&emsp;&emsp;细节决定成败，这句话多少次出现在一些广告或者鸡汤美文中，但没有加上“框架已经建好了的前提”。看过一些文章拿苹果的产品来说明 “细节决定成败” 的例子。任何一件产品要想领先，必须做到细节充分的打磨，但是苹果的工程师如果还没把产品框架做好就去考虑这些细节问题，不知道会多花多少时间做出来这么美的产品，优先考虑工作的优先级和重要程度是比考虑细节更重要的东西。</p>
+<p><strong>6.享受生活和改变世界</strong></p>
+<p>&emsp;&emsp;一些人想要改变世界，而另一些人只想与世无争地简单生活、享受生活。二者没有好坏之分。每个人都需要判断自己最珍视的是什么，并选择实现它的路径。这两方面我都很想要，所以我愉悦地努力工作，以争取二者兼得，并且发现它们很可能是一回事，而且相辅相成。我逐渐明白，从生活中获取尽可能多的东西，并不只是一个要为此而工作得更辛苦的问题。这更多的是一个有效工作的问题，因为有效工作能把我的能力提升几百倍。”</p>
+<p><strong>7.头脑极度开放，极度透明</strong></p>
+<p>&emsp;&emsp;对于快速学习和有效改变而言，头脑极度开放、极度透明是价值无限的。学习过程是一连串的实时反馈循环：我们做决定，看到结果，然后根据结果改进对现实的理解。做到头脑极度开放能够增强这些反馈循环的效率，因为这能让你和其他人无比清晰地看到你在做什么、为什么这么做，而不会产生误解。你的头脑越开放，你就越不会自欺，其他人也就越会给你诚实的反馈。</p>
+<p>&emsp;&emsp;学着做到极度透明，就像学习如何公开发言一样：一开始你会难堪，但你练得越多，你就越能应付自如。除了让人能自由做自己之外，这样做还会让我和其他人相互理解，与彼此不理解相比，这更有效而且更让人快乐。想想看，如果人们不是隐藏看法，而是公开分享看法，这将减少多少误解，世界的运转将会变得多么高效，我们将会多么接近真相。我指的不是每个人的内心私密，而是人们对彼此和现实的看法。</p>
+<p><strong>8.严厉的爱</strong></p>
+<p>&emsp;&emsp;在创立桥水之初，如果你问”我”目标是什么，他当时会说是为了跟喜欢的人在一起愉快地工作。工作对我来说就像一场游戏，我要跟我喜欢且尊敬的人在一起，玩得有激情，玩得开心。当时，我跟一位橄榄球球友一道，合伙在我的公寓设立了桥水，他一点市场经验都没有，我们雇了一个朋友做助手。那时我还想不到管理上的问题。在我看来，管理是那些身着灰西装、手持幻灯片的家伙所做的事情。我从未想过要去管理，更不用说制定工作和管理的原则了。<br>&emsp;&emsp;读完“生活原则”，你了解到“我”喜欢异想天开，喜欢制造新奇、符合实际、前所未有的概念。我特别喜欢跟别人一起完成任务。对于我们之间因深入思考而产生的分歧，我将其当作学习的机会，当作提高正确决策概率的过程。我希望所有员工都是我的“伙伴”而非我的“手下”。对我来说，良好的合作来自对共同价值观和利益的分享、相同的追求价值观和利益的方式、理性并善待对方。同时，合作方之间必须愿意秉承高标准，能够突破分歧开展工作。</p>
+<p>&emsp;&emsp;对良好合作关系形成主要考验的，不在于彼此之间是否有分歧（人们在正常的交往中都会有不同意见），而在于能否把分歧摆上桌面很好地协商解决。对生意伙伴、夫妻以及所有其他关系而言，具备清晰的流程，以便高效、明确地解决分歧是至关重要的。”</p>
+<p>&emsp;&emsp;为了成就伟大事业，对不应妥协的事情就必须坚持立场、寸步不让。然而，现实中我发现人们总是在妥协，通常是为了避免让他人或自己难堪，这种做法不仅落伍，而且会适得其反。把感觉舒服置于获得成功之前，会对所有人产生不良后果。对于与我共事的人，我爱他们，也会强力推动他们做到最好，我希望他们对待我亦是如此。</p>
+<p>我在1996年把这个想法写入了桥水的备忘录中：<br>&emsp;&emsp;桥水不是那种按照一般化的标准行事、暮气沉沉的公司。在桥水，应该为追求极高的标准拼命去工作，并为因努力而出类拔萃感到欣喜。我们压倒一切的目标就是做到卓越，或更准确地说，持续精进，使桥水成为一家在各方面都出类拔萃、不断进取的公司。在追求优异的过程中遇到冲突是再好不过的事情。不应当有长幼尊卑之分。谁讲话有权威要看谁的逻辑站得住脚，而不是看谁的职位高。要让最好的点子胜出，而不要管是谁说的。</p>
+<p><strong>9.工作中的极度求真和极度透明</strong></p>
+<p>&emsp;&emsp;关于极度求真，不是筛选某个人的想法或问题，尤其是那些关键问题，而是说如果我们不能开诚布公地讨论问题、寻找解决路径，我们就找不到同甘共苦的伙伴。<br>&emsp;&emsp;关于极度透明，是让几乎每个人都能得以了解几乎所有的事物。如果人们得到的信息不全面，就容易受他人影响，也无法做出自我判断。极度透明会减少办公室政治的危害，并降低不当行为的风险，因为不当行为更可能是在遮遮掩掩中产生的，在公开场合则无处躲藏。<br>&emsp;&emsp;有些人把这种行事方式称作直截了当。<br>&emsp;&emsp;我知道，如果工作中做不到全面的实事求是和公开透明，就会导致公司里面的人被分割为两个层级，即信息灵通的掌权者和其他不明真相的人，因此我让实事求是和公开透明都达到极限。</p>
+<p>&emsp;&emsp;大多数人起初对这一过程感到很不舒服。虽然他们在理智上认同，但往往在情感上经受挑战，因为这需要摆脱自以为是，去试图了解那些他们难以察觉的事实。一小部分人从一开始就能够理解并喜欢这一过程，还有稍微多一点的人因无法忍受而离开了公司，大多数人则坚持了下来，并随年头增长更好地适应，最终变得不再考虑用任何其他的方法。<br>&emsp;&emsp;在一个大多数同事之间都不知道彼此真实想法的机构工作会很难、效率很低。如果人与人之间不能开诚布公，大家就会都戴着面具。正如研究桥水的哈佛大学发展心理学家鲍勃·基根所说，在大多数公司，人们都在从事两个工作：一个是他们自己实际的工作，另一个是努力给别人留下自己如何工作的良好印象。对我们来说，这是件很糟糕的事情。我们发现，把所有事情摆到桌面上的好处在于：（1）不必刻意展示好的一面；（2）节省了猜测别人想法的时间。由此，就形成了更有意义的工作和更有意义的人际关系。</p>
+<p>&emsp;&emsp;40多年前，这种行事方式备受争议、未经考验，尽管如此，我认为其很符合逻辑。我们的方法与众不同。有人甚至把桥水描绘成一个像邪教一样的组织。其实，桥水能取得成功，恰恰是因为它走到了狂热轻信的反面。一群拥有共同价值观的人（这是个极佳的情况）与一群盲目狂热分子（这是个可怕的场景），二者之间有本质的不同，关键看有没有独立的思考。盲目狂热群体要求无原则的服从；而独立思考并挑战彼此的观点都是与盲目狂热背道而驰的行为，这也是我们在桥水的核心做法。</p>
+<p><strong>10.为人要正直，也要求他人保持正直</strong></p>
+<p>&emsp;&emsp;英文“integrity”（正直）一词来源于拉丁文“integritas”，意思是“一”或“完整”。表里不一的人，即不“完整”的人，是不正直的，他们当面一套、背后一套（duality）。在表达观点时，背离事实有时候可能达到一些短期效果，例如你想避免冲突、防止尴尬或者达到其他短期的目的，但从第二层、第三层效应上看，保持正直和避免当两面派能带来更多积极的影响。表里不一的人往往会自相矛盾，丢失自己的价值观。他们不容易开心，几乎不可能展现出自己最好的一面。<br>&emsp;&emsp;让所说与所想、所想与所感一致，会使你更加快乐、更加成功。只考虑事情本身的准确性，而非他人的看法，会使你集中精力专注于最重要的问题。这有助于你筛选人和地方，因为你会被开放、正直的人和地方吸引。这样做对你周围的人也更加公平，因为暗自论断他人，而不过问其观点如何，这样既不道德也不准确。而不遮掩、不隐瞒能释放压力，建立信任。</p>
+<p><strong>11. 工作中的求取共识</strong></p>
+<p>&emsp;&emsp;要想让一个机构有效运作，其员工必须在很多层面保持一致——从享有共同的使命、如何对待彼此，到在追求成功时，明确每个人的职责。但是，不要把保持一致当作理所当然的事，因为人与人是极为不同的。我们看待自己、看待世界都有自己独特的方式，所以要不断努力去探究什么是事实以及该如何作为。<br>&emsp;&emsp;在创意择优过程中，保持一致尤其重要，所以在桥水，我们试图有意识地、持续且系统化地努力达成一致。我们把这个求取一致的过程叫作“求取同步”。问题一般源自两个主要原因：简单的误解和根本上存在分歧。&emsp;&emsp;</p>
+<p>&emsp;&emsp;求取同步就是以开放而自信的心态修正双方立场的过程。<br>&emsp;&emsp;很多人以为，掩盖分歧是维持和睦最容易的方法，这种观点大错特错。回避冲突也就回避了解决冲突的机会；躲过了小的矛盾，之后往往会有大的矛盾，甚至会导致人与人的疏离。而只有直面且积极解决小的矛盾，才会更好地维持较长久的良好关系。认真处理分歧——当事方之间开放、坚定地进行高质量的反复讨论，细心梳理所有问题的过程——具有强大的作用，因为有助于双方了解此前不清楚的情况。但这并不太容易。在某些以成败论英雄的场合，强者逻辑是容易让人理解的（因为体育比赛中谁跑得快谁就是冠军，结果不言自明），但在创造性的场合，判断谁优谁劣就难多了，关于哪个点子最好，众说纷纭，但必须下决断。</p>
+<p>&emsp;&emsp;因此每个人必须了解求取同步所需的根本原则，即必须同时保持开放和坚定自信。理性解决分歧的过程不是战争，其目标不是说服对方他错你对，而是发掘事实，明确行动方案。这个过程也不能是谁级别高谁说了算，因为创意择优的沟通不仅仅是自上而下地、不容置喙地灌输批评，也可以自下而上传递。</p>
+<p><strong>12.运用工具和行为准则指导工作</strong></p>
+<p>仅凭文字是不够的。</p>
+<p>&emsp;&emsp;“我”把原则与桥水的员工分享并进行了完善，几乎每个人都认为我们的优异工作业绩都与这些原则息息相关，都希望按照原则行事。但希望做和实际能够做到之间有很大区别。假定人们能够做到他们想要做的事，就相当于假定那些每天说着要减肥的人一下子能把他的体重减下去了。除非建立好的习惯，否则成功不会降临。对于一个机构来说，成功要得益于工具和行为准则的帮助。<br>&emsp;&emsp;花一分钟想想，你读过多少本关于奉劝你改变行为的书，而你也希望改变但最终未能改变，如果没有工具和计划的帮助，你觉得通过阅读本书你能改变多少？我猜的是几乎没什么改变，正如你不可能通过读读书就能学到很多本领（如何骑自行车、讲一种外语等），如果不实践，就基本不可能把行为改过来。</p>
+<p>&emsp;&emsp;一个人每天做同样的事，就会产生同样的结果。按照爱因斯坦的说法，<strong>疯狂就是重复做同一件事却期待不同的结果</strong>。别落入这种陷阱，因为你很难走出来。为了促进真正的行为改变，必须内化学习或养成习惯。</p>
+<p><strong>13.对读者的祝愿</strong></p>
+<p>（1）你能将工作和激情有机结合在一起；</p>
+<p>（2）你能与同事为了共同的使命而奋斗，收获成果；</p>
+<p>（3）你能尽情享受奋斗和成果带来的欢乐；</p>
+<p>（4）你将迅速改善和进化，成就斐然。</p>
+<p>&emsp;&emsp;瑞·达里欧和他总结的原则带领桥水走上了成功，但外界对桥水的公司文化褒贬不一，一些人评价说桥水公司内部像是邪教文化，除了所有会议都要被录像，每个雇员必须实名制给其它同事的工作表现打分，同时可以看到别人给自己的打分。而背后议论是非的后果就是被开除，曾经有一位女高管在会议上被批评痛哭流涕的视频在公司内依然被转发。</p>
+<p>&emsp;&emsp;创始人达里奥把这些条例都清清楚楚写在公司的“基本原则（Principles）”中。达里欧过去曾提到，有25%的员工因为企业的苛刻要求，不到一年半就会请辞。最近，达里奥在接受Business Insider采访中进一步解释了，为什么这些人感到如此难熬？为什么桥水基金的部分雇员很快就选择离开，而另一部分人再也不想离开？</p>
+<p>&emsp;&emsp;在一个直接的，言辞须基于证据的环境中，很多人感到克服性格弱点十分困难，他们在“互相坦诚”上存在一定障碍。有些人乐于获知自己的缺点从而改善，而有些人则无法忍受（他人当面指出自己的缺点）。</p>
+<p>&emsp;&emsp;决定留下来的人有一些共同特质。他们知道并认可，最好的学习方式是从错误中学习——犯错→得到反馈→改善错误。这需要他品性非常谦逊，并且思想开明。他们必须意识到，他们的所知比起未知是沧海一粟。真正能对其造成伤害的是未知（而不是有人指出他们的错误）。另外，桥水基金非常适合那些喜欢适应快速变化的人。达里奥表示，事实上人们很快就会发现自己是否真正适合于一个透明化的环境。那些决定留下来的人，显然，他们是下定决心要在桥水基金发挥作用的人。</p>
+<p>&emsp;&emsp;最后附上瑞·达里欧制作的一段广为流传的视频 <a href="https://open.163.com/movie/2016/6/I/Q/MBPO9ED98_MBPO9S8IQ.html" target="_blank" rel="noopener">经济机器是怎样运行的</a></p>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 Gitalk -->
+<div id="gitalk-comment">
+    <!-- Gitalk 评论框 -->
+<div id="gitalk-container"></div>
+
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+
+<script>
+    var gitalk = new Gitalk({
+            clientID: '4e1006a347b1be459f95',
+            clientSecret: '2346cfba406943e32cf2c0a46089e2e7f0046a5b',
+            repo: 'hiwensen.github.io',
+            owner: 'hiwensen',
+            admin: ['hiwensen'],
+            id: md5(window.location.pathname),
+            // facebook-like distraction free mode
+            distractionFreeMode: false
+        })
+   gitalk.render('gitalk-container')
+</script>
+
+</div>
+<style>
+    #gitalk-comment {
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/shaowei.github.io/2019/08/25/HowDoesOKHttpCompleteANetworkRequest/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Newer
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/shaowei.github.io/2019/02/24/ClassesRelateToCacheOfExoPlayer/" id="post_nav-older" class="next-content">
+            Older
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/shaowei.github.io/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/shaowei.github.io/img/avatar.png" alt="ShaoweiChang's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        youremail@email.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="#" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/shaowei.github.io/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                Home
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    Archives
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/shaowei.github.io/archives/2019/08/">August 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/shaowei.github.io/archives/2019/03/">March 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/shaowei.github.io/archives/2019/02/">February 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/shaowei.github.io/archives/2019/01/">January 2019<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/shaowei.github.io/archives/2018/09/">September 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/shaowei.github.io/archives/2018/07/">July 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/shaowei.github.io/archives/2018/05/">May 2018<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+
+    <!-- Pages  -->
+    
+
+    <!-- Article Number  -->
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+    <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+            Theme - Material
+            <span class="sidebar-badge badge-circle">i</span>
+        </div>
+    </a>
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/twitter" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-twitter">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+        <a href="https://www.facebook.com/facebook" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-facebook">
+                <span class="visuallyhidden">Facebook</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Google + -->
+    
+        <a href="https://www.google.com/" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-gplus">
+                <span class="visuallyhidden">Google Plus</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+    
+    <!-- V2EX -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            <div>
+                Copyright&nbsp;©<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script>shaowei
+                
+            </div>
+         </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/shaowei.github.io/js/lazyload.min.js?1BcfzuNXqV+ntF6gq+5X3Q==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/shaowei.github.io/js/js.min.js?V/53wGualMuiPM3xoetD5Q==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/shaowei.github.io/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+    
+        <script>lsloader.load("sm_js","/shaowei.github.io/js/smoothscroll.js?lOy/ACj5suSNi7ZVFVbpFQ==", true)</script>
+    
+
+
+
+
+
+
+
+   <!-- GitTalk -->
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('<link rel="stylesheet" href="/shaowei.github.io/css/uc.css">');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+    
+        <script>lsloader.load("hanabi","/shaowei.github.io/js/hanabi-browser-bundle.js?Pki5+pzkluqu53g+ouMWpA==", true)</script>
+    
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+        
+        
+        HanabiBrowser.start('pre code',true);
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.2 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>

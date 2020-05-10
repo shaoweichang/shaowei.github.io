@@ -239,7 +239,7 @@
 
     
         <meta property="article:published_time" content="Sun May 10 2020 18:09:16 GMT+0800">
-        <meta property="article:modified_time" content="Sun May 10 2020 18:12:59 GMT+0800">
+        <meta property="article:modified_time" content="Sun May 10 2020 18:25:09 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -262,7 +262,7 @@
     "mainEntityOfPage": "https://shaoweichang.github.io/shaowei.github.io/shaowei.github.io/2020/05/10/Android%E9%9F%B3%E9%A2%91%E6%95%B0%E6%8D%AE%E7%9A%84%E9%87%87%E9%9B%86%E5%92%8C%E6%92%AD%E6%94%BE/index.html",
     "headline": "Android音频数据的采集和播放",
     "datePublished": "Sun May 10 2020 18:09:16 GMT+0800",
-    "dateModified": "Sun May 10 2020 18:12:59 GMT+0800",
+    "dateModified": "Sun May 10 2020 18:25:09 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "ShaoweiChang",
@@ -476,7 +476,7 @@
 <p>​    Android 提供了两套用于录制和播放音频的 API，分别是 MediaRecorder &amp; MediaPlayer 和 AudioRecord &amp; AudioTrack。MediaRecorder &amp; MediaPlayer 是偏上层的API，使用简单，对想做基本的音视频录制和播放的用户很友好。AudioRecord &amp; AudioTrack 是偏底层的API, 可以对原始的音频数据做混音、变音等处理，灵活度更高。</p>
 <p>​    先介绍 MediaRecorder  &amp;  MediaPlayer。</p>
 <p>​    MediaRecorder 既可以用来录制音频，也可以用来录制视频，它内部使用一个状态机控制录制过程，如下图所示：</p>
-<p><img src="/Users/changshaowei/Downloads/media_recorder_state.png" alt="media_recorder_state"></p>
+<p><img src="/Users/changshaowei/blog/source/_posts/Android%E9%9F%B3%E9%A2%91%E6%95%B0%E6%8D%AE%E7%9A%84%E9%87%87%E9%9B%86%E5%92%8C%E6%92%AD%E6%94%BE/media_recorder_state.png" alt="media_recorder_state"></p>
 <p>录制音频前，需要先申请录制音频的权限。使用 MeidaRecorder 录制音频的工作流如下：</p>
 <figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">MediaRecorder recorder = new MediaRecorder();</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"> recorder.setAudioSource(MediaRecorder.AudioSource.MIC);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"> recorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"> recorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"> recorder.setOutputFile(PATH_NAME);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"> recorder.prepare();</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"> <span class="comment">// 开始录制</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"> recorder.start();   </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line"> ...</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line"> recorder.stop();</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line"> <span class="comment">//reset 以后可以从 setAudioSource() 开始重用 recorder 实例</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line"> recorder.reset();  </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line"> <span class="comment">//release 以后recorder实例不能被重用</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line"> recorder.release();</span></pre></td></tr></table></figure>
 
